@@ -73,7 +73,7 @@ import Flickity from '@/components/Flickity.vue'
 
 export default {
   mounted () {
-    var navBar = document.getElementById('navigationBar');
+    const navBar = document.getElementById('navigationBar');
     navBar.className += " expanded";
   },
   data () {
@@ -166,12 +166,12 @@ ul {
 		margin-left: 0;
     width: 100%;
   }
-  
+
   ul {
 		margin: 1.5rem 0 1rem 0;
 		max-width: 100%;
   }
-  
+
 	ul li {
 		display: inline-block;
 		margin-right: 2.5vw;

@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Home from '@/components/Home.vue';
-import Quantyst from '@/components/Quantyst.vue';
+import Home from '@/views/Home.vue';
+import Quantyst from '@/views/Quantyst.vue';
 
 Vue.use(Router);
 

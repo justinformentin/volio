@@ -56,7 +56,7 @@
     <Card class="light">
       <h3 slot='cardTitle'>Design</h3>
       <div slot='cardContent'>
-    <p>Why is Quantyst is a data company? Is that a rhetorical quantion? Something about machine learning models goes here so they can quantify the massive amounts of data on the internet. With Quantyst, you can analyze the sentiment of social media posts. Designed to have a modern look and feel, it has a cool color scheme. Much like the cold, lifeless servers that holds its data.</p>      
+    <p>Why is Quantyst is a data company? Is that a rhetorical quantion? Something about machine learning models goes here so they can quantify the massive amounts of data on the internet. With Quantyst, you can analyze the sentiment of social media posts. Designed to have a modern look and feel, it has a cool color scheme. Much like the cold, lifeless servers that holds its data.</p>
     </div>
       <Flickity slot='cardGallery' ref="flickity" :options="flickityOptions" class='gallery'>
         <figure class="item tablet"><img src='../assets/a1.jpg' alt="Quantyst Collection View" width="1280" height="960"/></figure>
@@ -86,7 +86,7 @@ import Flickity from '@/components/Flickity.vue'
 
 export default {
   mounted () {
-    var navBar = document.getElementById('navigationBar')
+    const navBar = document.getElementById('navigationBar')
     navBar.classList.remove("expanded")
   },
   data () {
@@ -166,11 +166,11 @@ export default {
 	.h-pic {
 		margin-left: -18.5rem;
   }
-  
+
 	.tablet-video, video {
 		width: 480px; height: 360px;
   }
-  
+
 	.picture {
 		width: 464px; height: 410px;
 	}
@@ -180,7 +180,7 @@ export default {
 	.tablet-video, video {
 		width: 416px; height: 312px;
   }
-  
+
 	.picture {
 		width: 406px; height: 358px;
 	}
@@ -190,7 +190,7 @@ export default {
 	.tablet-video, video {
 		width: 320px; height: 240px;
   }
-  
+
 	.picture {
 		width: 290px; height: 256px;
 	}

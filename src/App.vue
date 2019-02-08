@@ -24,7 +24,7 @@ import Velocity from 'velocity-animate/velocity.js'
 export default {
   methods: {
     appear: function(el) {
-      var b = document.getElementById('blinds');
+      const b = document.getElementById('blinds');
       Velocity(b, { translateX: '-100%' }, { duration: 400, delay: 200 });
       Velocity(el, { opacity: 1 }, { duration: 0, delay: 100 });
     },
@@ -32,12 +32,12 @@ export default {
       el.style.opacity = 0
     },
     enter: function(el, done) {
-      var b = document.getElementById('blinds');
+      const b = document.getElementById('blinds');
       Velocity(el, { opacity: 1 }, { duration: 0, complete: window.scrollTo(0, 0) });
       Velocity(b, { translateX: '100%' }, { duration: 600, delay: 50, complete: done });
     },
     leave: function(el, done) {
-      var b = document.getElementById('blinds');
+      const b = document.getElementById('blinds');
       Velocity(el, { opacity: 0 }, { duration: 0, delay: 400 });
       Velocity(b, { translateX: '-100%' }, { duration: 0 });
       Velocity(b, { translateX: '0%' }, { duration: 400, complete: done });
